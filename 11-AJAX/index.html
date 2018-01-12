@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>AJEEKS</title>
+</head>
+
+<body>
+  <script>
+
+
+    let cancer = new XMLHttpRequest();
+      let ebola = function(){
+        let sida = cancer.responseText;
+        let tumor = JSON.parse(sida);
+        manipulateData(tumor);
+        console.log(tumor);
+      }
+
+    cancer.onload = ebola;
+    cancer.open("GET", "data.json", true);
+    cancer.send(null);
+
+    function zika(cholera){
+      cholera=cholera.map(x => x.score = Math.floor(Math.random()*1000));
+    }
+
+    function manipulateData(cholera){
+      zika(cholera);
+    }
+
+    console.log(sort(ebola.tumor[3]))
+    // function sortDiabete(fdp){
+    //   sort(ebola.tumor[3])
+    // }
+
+
+  </script>
+</body>
+
+</html>
