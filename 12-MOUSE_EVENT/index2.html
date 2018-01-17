@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mouse event</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+</head>
+
+<body>
+  <!-- JAVASCRIPT BELOW -->
+  <script>
+
+    $(document).ready(function() {
+      $('.reset').on('click', function() {
+        $('.hoverMe').toggle();
+      });
+    });
+  </script>
+  <!-- JAVASCRIPT ABOVE -->
+  <!-- CSS BELOW -->
+  <style>
+    .exTitle {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .hoverMe {
+      text-align: center;
+    }
+
+    .reset{
+      margin:auto;
+      width:300px;
+      height:250px;
+      border-radius: 5px;
+      border:blue solid 2px;
+      background-image:url("https://vignette1.wikia.nocookie.net/maafanficuniverse/images/2/2f/Floaty_Cloud_Wizard_Sloth_Alone.png/revision/latest?cb=20151028083526");
+      background-size:contain;
+    }
+    .reset p{
+      text-align: center;
+      margin-top:50%;
+    }
+  </style>
+  <!-- CSS ABOVE -->
+  <div class="exTitle">
+    <h1>EXERCICE 2</h1>
+  </div>
+  <div class="reset">
+      <p>CLICK ON ME, YOU FOOL</p>
+  </div>
+  <div class="hoverMe">
+
+      <h2>DO YOU KNOW THE WAY ?</h2>
+      <p>You have to have blue or red ebola to know the way of the dival</p>
+
+  </div>
+  <div class="hoverMe">
+
+      <h2>SHOW US THE WAY MY QUEEN</h2>
+      <progress value="20" max="100">Left</progress>
+      <br>
+      <progress value="30" max="100">Right</progress>
+      <br>
+      <progress value="50" max="100">50</progress>
+      <br>
+      <progress value="100" max="100">The way</progress>
+
+  </div>
+  <div class="hoverMe">
+
+      <h2>HE'S A NON-BELIEVAH SPIT ON HIM</h2>
+      <button type="button">Click to spit</button>
+
+  </div>
+
+</body>
+
+</html>

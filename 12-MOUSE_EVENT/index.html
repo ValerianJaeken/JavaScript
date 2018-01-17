@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mouse event</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+</head>
+
+<body>
+  <!-- JAVASCRIPT BELOW -->
+  <script>
+    $(
+      function() {
+        $('.hoverMe').mouseenter(function() {
+          $(this).hide();
+        });
+        $('.hiddenDiv').mouseleave(function() {
+          $('.hoverMe').show();
+        });
+      });
+  </script>
+  <!-- JAVASCRIPT ABOVE -->
+  <!-- CSS BELOW -->
+  <style>
+    .exTitle {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .hoverMe {
+      text-align: center;
+    }
+
+    .hiddenDiv {
+      text-align: center;
+    }
+  </style>
+  <!-- CSS ABOVE -->
+  <div class="exTitle">
+    <h1>EXERCICE 1</h1>
+  </div>
+  <div class="hiddenDiv">
+    <h3>MY ONLY PURPOSE IS FOR THE DIV BELOW TO APPEAR WHEN YOU HOVER AROUND HERE</h3>
+
+  </div>
+  <div class="hoverMe">
+    <section>
+      <h2>DO YOU KNOW THE WAY ?</h2>
+      <p>You have to have blue or red ebola to know the way of the dival</p>
+    </section>
+  </div>
+  <div class="hoverMe">
+    <section>
+      <h2>SHOW US THE WAY MY QUEEN</h2>
+      <progress value="20" max="100">Left</progress>
+      <br>
+      <progress value="30" max="100">Right</progress>
+      <br>
+      <progress value="50" max="100">50</progress>
+      <br>
+      <progress value="100" max="100">The way</progress>
+    </section>
+  </div>
+  <div class="hoverMe">
+    <section>
+      <h2>HE'S A NON-BELIEVAH SPIT ON HIM</h2>
+      <button type="button">Click to spit</button>
+    </section>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+.highlight{
+  opacity:0.5;
+}
+#up{
+  border: solid black 2px;
+  margin-left:40%;
+  background-color:purple;
+  height:100px;
+  width:100px;
+}
+#down{
+  border: solid black 2px;
+  margin-left:40%;
+  background-color:blue;
+  height:100px;
+  width:100px;
+}
+#left{
+  border: solid black 2px;
+  margin-left:40%;
+  background-color:red;
+  height:100px;
+  width:100px;
+}
+#right{
+  border: solid black 2px;
+  margin-left:40%;
+  background-color:green;
+  height:100px;
+  width:100px;
+}

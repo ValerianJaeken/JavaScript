@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+  <title>KEYBOARD</title>
+</head>
+
+<body>
+  <script>
+    // creating a map of the relation between the keyboard character pressed
+    // and the colour it should generate; 'color.b' and 'color["b"]' both give
+    // 'blue' for example:
+    var colorMap = {
+      'a': 'blue',
+      'z': 'red',
+      'e': 'black',
+      'r': 'fuchsia',
+      't': 'green',
+      'y': 'teal',
+      'u': 'cyan',
+      'i': 'yellow',
+      'o': 'gray',
+      'p': 'lightgray'
+    };
+
+    // binding the keypress event on the document:
+    $(document).on('keyup', function(e) {
+      // creating a string from the character-code of the pressed key,
+      // e.which returns the jQuery-normalised character code,
+      // converting that string to lower case:
+      var letter = String.fromCharCode(e.which).toLowerCase();
+
+      // using the css() method to set the background-color to the
+      // color returned from the colorMap[letter] call:
+      $('.character').css('background-color', colorMap[letter]);
+    });
+  </script>
+  <style>
+    .character{
+      border:solid darkgray 5px;
+      height:400px;
+    }
+  </style>
+  <div class="character">
+
+  </div>
+
+
+</body>
+
+</html>

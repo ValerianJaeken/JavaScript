@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mouse event</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+</head>
+
+<body>
+  <!-- JAVASCRIPT BELOW -->
+  <script>
+    function showCoords(event) {
+      var x = event.clientX;
+      var y = event.clientY;
+      var coorx = "Coordinates X: " + x;
+      var coory = "Coordinates Y: " + y;
+      document.getElementById("axe-x").innerHTML = coorx;
+      document.getElementById("axe-y").innerHTML = coory;
+    }
+
+    function clearCoor() {
+      document.getElementById("axe-x").innerHTML = "";
+    }
+  </script>
+  <!-- JAVASCRIPT ABOVE -->
+  <style>
+    div {
+      height: 300px;
+      border: 1px solid black;
+      margin: auto;
+    }
+
+    p {
+      text-align: center;
+    }
+  </style>
+
+  <div onmousemove="showCoords(event)" onmouseout="clearCoor()"></div>
+
+  <p>Mouse over the rectangle above to get the horizontal and vertical coordinates of your mouse pointer.</p>
+
+  <p id="axe-x"></p>
+  <p id="axe-y"></p>
+
+</body>
+
+</html>

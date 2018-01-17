@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>KEYBOARD</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div id="up">
+
+  </div>
+  <div id="down">
+
+  </div>
+  <div id="left">
+
+  </div>
+  <div id="right">
+
+  </div>
+  <script>
+    let ty = document.getElementById("up");
+    let ra = document.getElementById("left");
+    let juif = document.getElementById("down");
+    let zor = document.getElementById("right");
+
+    document.body.addEventListener("keydown", function(event){
+      let keyName = event.key;
+      console.log(keyName)
+      switch (keyName){
+        case "ArrowLeft" :
+          ra.classList.add('highlight');
+          break;
+        case "ArrowUp" :
+          ty.classList.add('highlight');
+          break;
+          case "ArrowRight" :
+          zor.classList.add("highlight");
+          break;
+          case "ArrowDown" :
+          juif.classList.add("highlight");
+          break;
+      }
+    })
+  </script>
+
+
+</body>
+
+</html>
